@@ -8,7 +8,7 @@ class QRCodeController extends Controller
 {
     public function index()
     {
-        $text = 'haiii'; 
+        $text = 'https://example.com'; 
 
         // Generate QR Code
         $qrCode = QrCode::size(200)->generate($text);
