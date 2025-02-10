@@ -1,25 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://laravel.com" target="_blank">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+    </a>
 </p>
 
-## About Laravel
+<p align="center">
+    <a href="https://github.com/laravel/framework/actions">
+        <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
+    </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 📌 QR Code Generator (Laravel)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+🚀 **QR Code Generator** adalah proyek berbasis Laravel yang memungkinkan pengguna untuk menghasilkan QR Code dengan mudah menggunakan **library SimpleSoftwareIO**. Proyek ini dapat digunakan untuk berbagai kebutuhan seperti **membuat tautan QR, informasi kontak, atau data lainnya**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
+- ✅ **Generate QR Code dengan cepat** menggunakan SimpleSoftwareIO.
+- ✅ **Tampilan sederhana & responsif** dengan TailwindCSS.
+- ✅ **Dapat menyimpan QR Code yang dihasilkan**.
+- ✅ **Mudah dikustomisasi** sesuai kebutuhan.
 
-## Screenshot
+## 🔧 Installation Guide
+
+Untuk meng-clone dan menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/cgirl12/laravel-qrcode.git
+cd laravel-qrcode
+```
+
+### 2️⃣ Install Dependencies
+Pastikan Anda telah menginstal [Composer](https://getcomposer.org/), lalu jalankan:
+```bash
+composer install
+```
+
+### 3️⃣ Install Library QR Code
+Proyek ini menggunakan **SimpleSoftwareIO QR Code Library**, install dengan:
+```bash
+composer require simplesoftwareio/simple-qrcode
+```
+
+### 4️⃣ Konfigurasi Environment File
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+Edit file `.env` dan sesuaikan pengaturan database.
+
+### 5️⃣ Jalankan Migrasi Database (Jika Diperlukan)
+```bash
+php artisan migrate
+```
+
+### 6️⃣ Jalankan Aplikasi
+```bash
+php artisan serve
+```
+Buka di browser: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 🖼 Screenshot
+
 ![image](https://github.com/user-attachments/assets/63cff518-7bd8-4197-8c3d-ddf24bead317)
+
+---
+
+## 📜 License
+
+Proyek ini bersifat open-source dan tersedia di bawah [MIT License](https://opensource.org/licenses/MIT).
+
+---
